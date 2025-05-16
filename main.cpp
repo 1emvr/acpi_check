@@ -1,6 +1,5 @@
 #include <windows.h>
 #include <sysinfoapi.h>
-#include <cstdint>
 #include <cstdio>
 
 int main() {
