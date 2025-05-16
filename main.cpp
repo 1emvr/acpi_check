@@ -19,7 +19,7 @@ int main() {
 
      UINT read = EnumSystemFirmwareTables(acpi, buffer, size);
 
-     SIZE_T table_count = size/4;
+     SIZE_T table_count = size/4; // n_prov with 4-character names 
      CHAR **table_names = (char**)HeapAlloc(GetProcessHeap(), 0, table_count * sizeof(char*));
 
      for (size_t i = 0; i < table_count; i++) {
